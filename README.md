@@ -1,6 +1,6 @@
 # Tasks Layout
 
-Sample layoutfor a tasks management web application.
+Sample vue/vuetify layout for a tasks management web application.
 
 ![Screenshot](docs/screenshot.png "Screenshot")
 
