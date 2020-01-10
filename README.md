@@ -2,6 +2,8 @@
 
 Sample layoutfor a tasks management web application.
 
+![Screenshot](docs/screenshot.png "Screenshot")
+
 ## Project setup
 
 ```
