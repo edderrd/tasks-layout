@@ -28,21 +28,21 @@
         </template>
       </v-list>
       <v-list dense subheader>
-        <v-subheader>PROJECTS</v-subheader>
+        <v-divider></v-divider>
         <template v-for="(project, index) in projects">
           <v-list-item
             link
             :key="index"
             @click="setAppBarTitle(project.label, null, project.color)"
           >
-            <v-list-item-action>
+            <v-list-item-avatar>
               <v-avatar
-                :size="36"
-                class="ml-1 text-uppercase"
+                :size="28"
+                class="text-uppercase body-2"
                 :color="project.color"
                 >{{ `${project.label[0]}${project.label[1]}` }}</v-avatar
               >
-            </v-list-item-action>
+            </v-list-item-avatar>
             <v-list-item-content>
               <v-list-item-title>{{ project.label }}</v-list-item-title>
             </v-list-item-content>
@@ -67,24 +67,13 @@
       <template #append>
         <div class="mb-5 d-flex justify-center align-center">
           <v-btn icon>
-            <v-icon>mdi-settings</v-icon>
+            <v-avatar :size="26">
+              <img src="//www.gravatar.com/avatar/none?f=y&d=mm" />
+            </v-avatar>
           </v-btn>
         </div>
       </template>
     </v-navigation-drawer>
-    <!-- <v-app-bar app :color="appBarColor" clipped-left dark>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title class="d-flex align-center">
-        <v-icon class="mr-1">{{ appBarIcon }}</v-icon>
-        <span>{{ appBarTitle }}</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-avatar :size="26">
-          <img src="//www.gravatar.com/avatar/none?f=y&d=mm" />
-        </v-avatar>
-      </v-btn>
-    </v-app-bar> -->
     <v-content>
       <div style="display: flex; min-height: min-content;">
         <div style="height: 99.8vh; overflow: auto;">
